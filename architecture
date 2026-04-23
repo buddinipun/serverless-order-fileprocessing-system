@@ -1,1 +1,22 @@
 
+Retailer Upload CSV
+        │
+        ▼
+      S3 Bucket
+        │
+        ▼
+     Lambda #1
+ (CSV File Processor)
+        │
+        ▼
+   SQS Order Queue
+        │
+        ▼
+     Lambda #2
+(Order Consumer)
+        │
+        ▼
+   DynamoDB Orders Table
+        │
+        ▼
+   CloudWatch Logs
