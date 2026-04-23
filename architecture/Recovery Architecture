@@ -1,0 +1,14 @@
+Order Processing Lambda
+        │
+     Success
+        │
+        ▼
+     DynamoDB
+
+If failure
+        │
+Retry automatically
+        │
+After max retries
+        ▼
+ Dead Letter Queue
